@@ -60,3 +60,37 @@ function imprimirPalabra(palabra, numero) {
 imprimirPalabra("hola", 5);
 
 //ejercicio 6
+function recibeArray(a) {
+  for (let i = 0; i < a.length; i++) {
+    console.log(a[i]);
+  }
+}
+
+const a = [1, 2, 3, 4, 5];
+recibeArray(a);
+
+//ejercicio 7
+
+function array10numeros(arregloNumeros) {
+  for (let i = 0; i < arregloNumeros.length; i++) {
+    if (i === 4) {
+      continue;
+    }
+    console.log(arregloNumeros[i]);
+  }
+}
+
+const arregloNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+array10numeros(arregloNumeros);
+
+//ejercicio 8
+
+function multiplo(n, narray) {
+  for (let i = 0; i < narray.length; i++) {
+    let multiplicacion = narray[i] * n;
+    console.log(multiplicacion);
+  }
+}
+
+const narray = [1, 2, 3];
+multiplo(5, narray);
